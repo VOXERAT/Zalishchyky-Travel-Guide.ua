@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путівник Заліщиками</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="item-1">
+        <h1 class="logo">Заліщики. Туристичне місто</h1>
+        <img src="Images/zalishchyky-1.png" alt="" class="img-z" />
+      </div>
+      <div class="item-2">
+        <div class="top">
+          <p class="information">
+            Залі́щики — місто в Україні. Розташоване на півночі Тернопільської
+            області, на лівому березі Дністра. Місто відоме своїми малбовничими
+            краєвидами, Дністровським каньйоном, унікальним кліматом та красивою
+            природою. Колись відомий курорт, куди приїжджали на відпочинок різні
+            діячі культури та знаменитості.
+          </p>
+        </div>
+      </div>
+      <div class="item-3">
+        <button onclick="first()" class="menu-1">Чим доїхати</button>
+        <button onclick="second()" class="menu-2">Де зупинитися</button>
+        <button onclick="third()" class="menu-3">Де поїсти</button>
+        <button onclick="fourth()" class="menu-4">Що відвідати</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="jey">
+        <div class="hz">
+          <h2 class="mini">Про Заліщики</h2>
+        </div>
+        <div class="eam">
+          <img src="Images/arrow.png" alt="" class="strilka" />
+        </div>
+      </div>
+      <div class="box">
+        <div class="container">
+          <p class="text">
+            Це туристичне місце, яке славиться визначними
+            історико-архітектурними пам`ятками та приголомшливою природою. Тут
+            розташований Дністровський каньйон – один із найбільших в Європі.
+            Завдяки ньому місто схоже на острів.
+          </p>
+        </div>
+        <div class="container">
+          <p class="text">
+            Вважають, що назва міста походить від місця проживання перших
+            поселенців — «за ліщиною», хоча правдивішою виглядає версія, що
+            назва утворилась від первісної назви поселення — Залісся, що пізніше
+            стало Залісще, і вже кінцевий варіант — Заліщики.
+          </p>
+        </div>
+        <div class="container">
+          <ul class="mem">
+            <li class="text-2">«Чому варто відвідати Заліщики?»</li>
+            <li class="text-2">1. 🌊 Побачити Дністер</li>
+            <li class="text-2">2. 🏞️ Помилуватися Дністровським каньйоном</li>
+            <li class="text-2">3.🏛️ Познайомитися з історією міста</li>
+            <li class="text-2">4. 📸 Зробити неймовірні фото</li>
+            <li class="text-2">5. 🌿 Відпочити серед природи</li>
+            <li class="text-2">6. 🚶 Пройти туристичним маршрутом</li>
+         </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="bigbob">
+        <div class="foza">
+          <h3 class="shruft">Заліщики 100 років тому</h3>
+          <img src="Images/zalishchyky-2.jpg" alt="" class="oldimg-z" />
+        </div>
+        <div class="lop">
+          <h4 class="shruft">Герб заліщиків</h4>
+          <img src="Images/coat of arms.png" alt="" class="gerb" />
+        </div>
+      </div>
+    </footer>
+    <script>
+      function first() {
+        document
+          .querySelectorAll(".img-z, .item-2, .jey, .box, .bigbob")
+          .forEach((element) => element.remove());
+        document
+          .querySelectorAll(".noc, .mom, .dad")
+          .forEach((element) => element.remove());
+        document.getElementsByClassName("logo")[0].innerHTML = "Чим доїхати?";
+
+        document
+          .querySelectorAll(".azur")
+          .forEach((element) => element.remove());
+        const azur = document.createElement("div");
+        azur.classList.add("azur");
+        document.getElementsByClassName("header")[0].appendChild(azur);
+        const be = document.createElement("div");
+        be.classList.add("be");
+        document.getElementsByClassName("azur")[0].appendChild(be);
+
+        const sonik2 = document.createElement("p");
+        sonik2.classList.add("sonik");
+        sonik2.textContent =
+          "До Заліщиків можна доїхати потягом, автобусом, автомобілем або таксі. Місто має залізничне та автобусне сполучення з багатьма містами України, зокрема Чернівцями, Тернополем, Львовом, Хмельницьким та Кам’янцем-Подільським.";
+        document.getElementsByClassName("be")[0].append(sonik2);
+      }
+
+      function second() {
+        document
+          .querySelectorAll(".img-z, .item-2, .jey, .box, .bigbob")
+          .forEach((element) => element.remove());
+        document
+          .querySelectorAll(".azur")
+          .forEach((element) => element.remove());
+        document.getElementsByClassName("logo")[0].innerHTML = "Де зупинитися?";
+
+        document
+          .querySelectorAll(".noc, .mom, .dad")
+          .forEach((element) => element.remove());
+
+        const div1 = document.createElement("div");
+        div1.classList.add("noc");
+        document.getElementsByClassName("header")[0].appendChild(div1);
+        const free = document.createElement("div");
+        free.classList.add("free");
+        document.getElementsByClassName("noc")[0].appendChild(free);
+        const ul = document.createElement("ul");
+        ul.classList.add("zara");
+        document.getElementsByClassName("noc")[0].appendChild(ul);
+        const hotel = document.createElement("img");
+        hotel.classList.add("hotel");
+        hotel.src = "Images/hotel emoji.webp";
+        document.getElementsByClassName("noc")[0].appendChild(hotel);
+
+        const li1 = document.createElement("li");
+        li1.classList.add("toptext");
+        li1.textContent =
+          "У Заліщиках є кілька варіантів, де можна переночувати:";
+        document.getElementsByClassName("zara")[0].appendChild(li1);
+        const li2 = document.createElement("li");
+        li2.classList.add("toptext");
+        li2.textContent =
+          "1. Оазис — готель у Заліщиках, вул. Зеленогайська, 5а.";
+        document.getElementsByClassName("zara")[0].appendChild(li2);
+        const li3 = document.createElement("li");
+        li3.classList.add("toptext");
+        li3.textContent =
+          "2. Старі Заліщики — готель у центрі міста, вул. Степана Бандери.";
+        document.getElementsByClassName("zara")[0].appendChild(li3);
+        const li4 = document.createElement("li");
+        li4.classList.add("toptext");
+        li4.textContent =
+          "3. МішиН-СіТі — туристичний комплекс та готель у Добрівлянах, неподалік Заліщиків, вул. Національного відродження, 202.";
+        document.getElementsByClassName("zara")[0].appendChild(li4);
+
+        const dad = document.createElement("div");
+        dad.classList.add("dad");
+        document.getElementsByClassName("header")[0].appendChild(dad);
+        const mom = document.createElement("div");
+        mom.classList.add("mom");
+        document.getElementsByClassName("header")[0].appendChild(mom);
+
+        const cara1 = document.createElement("a");
+        cara1.classList.add("a");
+        cara1.href =
+          "https://www.booking.com/hotel/ua/oazis-zalishchyky.uk.html";
+        cara1.textContent = "Забронювати номер в готелі Оазис";
+        document.getElementsByClassName("dad")[0].appendChild(cara1);
+        const cara2 = document.createElement("img");
+        cara2.classList.add("picture");
+        cara2.src = "Images/oasis.jpg";
+        document.getElementsByClassName("mom")[0].appendChild(cara2);
+
+        const tat1 = document.createElement("a");
+        tat1.classList.add("a");
+        tat1.href =
+          "https://hotels24.ua/uk/Zalishchyky/Hotel-Roksolanochka-7976.html";
+        tat1.textContent = "Забронювати номер у готелі Старі заліщики";
+        document.getElementsByClassName("dad")[0].appendChild(tat1);
+        const tat2 = document.createElement("img");
+        tat2.classList.add("picture");
+        tat2.src = "Images/hotel old zalishchyky.jpg";
+        document.getElementsByClassName("mom")[0].appendChild(tat2);
+
+        const lof1 = document.createElement("a");
+        lof1.classList.add("a");
+        lof1.href =
+          "https://www.booking.com/searchresults.uk.html?aid=331505&label=hotel-mishyn-city-BPp5otfGE6GzH8zDDX89GwS744536801920%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-392307358517%3Alp9227687%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ya9nxjGDNbW5EYtiD4vOFos&gclid=Cj0KCQjwnIDUBhDrARIsAJDGwStg70MANKmKDUaZVcI3iKV0UC4sw7T9s52mu-zJ_1msPlikJ0nTttUaAqVuEALw_wcB&redirected=1&city=-1037910&highlighted_hotels=2147429&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=a741a88170348fdec11c206156f8f86a";
+        lof1.textContent = "Забронювати номер у готелі МішиН-СіТі";
+        document.getElementsByClassName("dad")[0].appendChild(lof1);
+        const lof2 = document.createElement("img");
+        lof2.classList.add("picture");
+        lof2.src = "Images/mishyn-city.jpg";
+        document.getElementsByClassName("mom")[0].appendChild(lof2);
+      }
+
+      function third() {
+        document
+          .querySelectorAll(".img-z, .item-2, .jey, .box, .bigbob")
+          .forEach((element) => element.remove());
+        document
+          .querySelectorAll(".azur")
+          .forEach((element) => element.remove());
+        document
+          .querySelectorAll(".noc, .mom, .dad")
+          .forEach((element) => element.remove());
+        document.getElementsByClassName("logo")[0].innerHTML = "Де поїсти?";
+      }
+
+      function fourth() {
+        document
+          .querySelectorAll(".img-z, .item-2, .jey, .box, .bigbob")
+          .forEach((element) => element.remove());
+        document
+          .querySelectorAll(".azur")
+          .forEach((element) => element.remove());
+        document
+          .querySelectorAll(".noc, .mom, .dad")
+          .forEach((element) => element.remove());
+        document.getElementsByClassName("logo")[0].innerHTML = "Що відвідати?";
+      }
+    </script>
+  </body>
+</html>
