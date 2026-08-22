@@ -1,0 +1,544 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(134deg, #2cb2b9 0%, #2c6992 50%, #b24ba9 100%);
+}
+
+.logo {
+  font-family: "Sekuya", system-ui;
+  text-align: center;
+}
+
+.img-z {
+  width: 840px;
+  height: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 5px solid black;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-2 {
+  width: 1500px;
+  max-width: calc(100% - 140px);
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  justify-content: flex-end;
+}
+
+.information {
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+  margin: 15px;
+}
+
+.top {
+  height: 600px;
+  width: 290px;
+  border: 3px solid black;
+  background-color: blanchedalmond;
+  display: flex;
+  border-radius: 20px;
+}
+
+.item-3 {
+  border: 3px solid black;
+  height: 280px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 23px;
+}
+
+.menu-1,
+.menu-2,
+.menu-3,
+.menu-4 {
+  height: 70px;
+  width: 100px;
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  background-color: white;
+}
+
+.menu-1 {
+  border-radius: 20px 20px 0 0;
+}
+
+.menu-4 {
+  border-radius: 0 0 20px 20px;
+}
+
+.main {
+  width: 100%;
+}
+
+.jey {
+  display: flex;
+  flex-direction: column;
+}
+
+.hz {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.mini {
+  font-size: 31px;
+  font-family: "Sekuya", system-ui;
+}
+
+.eam {
+  height: 117px;
+  width: 325px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.strilka {
+  height: 100px;
+  width: 112px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(215deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(215deg) scale(1.15);
+  }
+}
+
+.box {
+  display: flex;
+  width: 1500px;
+  max-width: 100%;
+  min-height: 513px;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.container {
+  background-color: aquamarine;
+  height: 467px;
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+}
+
+.text-2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+}
+
+.mem {
+  padding-left: 25px;
+}
+
+.oldimg-z {
+  height: 400px;
+  width: 650px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+.gerb {
+  height: 400px;
+  width: 320px;
+  max-width: 100%;
+  object-fit: contain;
+  border: 3px solid black;
+}
+
+.bigbob {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.foza,
+.lop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shruft {
+  font-size: 20px;
+}
+
+.zara {
+  list-style: none;
+  background-color: rgb(196, 106, 199);
+  border: 3px solid black;
+  width: 800px;
+  max-width: 90%;
+  border-radius: 20px;
+}
+
+.noc {
+  min-height: 350px;
+  width: 1500px;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.toptext {
+  font-size: 27px;
+  font-family: "Roboto Slab", serif;
+}
+
+.mom {
+  min-height: 323px;
+  width: 1500px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.picture {
+  height: 278px;
+  width: 316px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.dad {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.a {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.be {
+  background-color: #42ba94;
+  border: 3px solid black;
+  min-height: 220px;
+  width: 780px;
+  max-width: 90%;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.azur {
+  width: 1500px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sonik {
+  font-size: 26px;
+  font-family: "Roboto Slab", serif;
+}
+
+.hotel {
+  height: 250px;
+  width: 200px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.free {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin: 15px 45px 10px;
+  }
+
+  /* Картинка */
+  .img-z {
+    width: 92%;
+    height: auto;
+    border-width: 3px;
+  }
+
+  /* Інформаційний блок */
+  .item-2 {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .top {
+    width: 92%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .information {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 12px;
+  }
+
+  /* Меню */
+  .item-3 {
+    position: static;
+    width: 92%;
+    height: auto;
+    margin: 10px auto;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .menu-1,
+  .menu-2,
+  .menu-3,
+  .menu-4 {
+    width: 25%;
+    height: 52px;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 0;
+  }
+
+  .menu-1 {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .menu-4 {
+    border-radius: 0 15px 15px 0;
+  }
+
+  /* Заголовок */
+  .hz {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mini {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .eam {
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+  }
+
+  .strilka {
+    width: 75px;
+    height: 70px;
+  }
+
+  /* Три інформаційні блоки */
+  .box {
+    width: 100%;
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    width: 92%;
+    min-height: 0;
+    height: auto;
+    padding: 8px;
+  }
+
+  .text {
+    font-size: 17px;
+    line-height: 1.45;
+    margin: 8px;
+  }
+
+  .text-2 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* Нижня частина */
+  .bigbob {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .foza,
+  .lop {
+    width: 100%;
+  }
+
+  .oldimg-z {
+    width: 92%;
+    height: auto;
+  }
+
+  .gerb {
+    width: 200px;
+    height: auto;
+  }
+
+  /* Сторінка "Де зупинитися" */
+  .zara {
+    width: 92%;
+    max-width: 92%;
+    padding: 15px 25px;
+  }
+
+  .toptext {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .noc {
+    width: 100%;
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mom {
+    width: 100%;
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .picture {
+    width: 260px;
+    height: 230px;
+  }
+
+  .dad {
+    width: 92%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .a {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Сторінка "Чим доїхати" */
+  .azur {
+    width: 100%;
+  }
+
+  .be {
+    width: 92%;
+    max-width: 92%;
+    min-height: 0;
+    height: auto;
+  }
+
+  .sonik {
+    font-size: 17px;
+    line-height: 1.45;
+  }
+
+  .hotel {
+    width: 140px;
+    height: auto;
+  }
+
+  .free {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu-1,
+  .menu-2,
+  .menu-3,
+  .menu-4 {
+    font-size: 8px;
+  }
+
+  .information {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .text-2 {
+    font-size: 15px;
+  }
+
+  .picture {
+    width: 230px;
+    height: 205px;
+  }
+}
